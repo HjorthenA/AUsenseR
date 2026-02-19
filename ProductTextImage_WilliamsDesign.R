@@ -78,7 +78,7 @@ products_tbl <- tibble(
 # name_size = text size of the presented ProductName
 # desc_size = text size of the presented ProductBody
 
-wd_df_final <- make_williams_products_df(
+wd_df <- make_williams_products_df(
   products_tbl = products_tbl,
   n_ids = 500,
   id_name = "ID",
@@ -88,5 +88,6 @@ wd_df_final <- make_williams_products_df(
 
 # Write the design file and upload to the Github repository
 
-write.csv(wd_df_final, "DairySoyProducts_wd.csv", row.names = FALSE)
+write.csv(wd_df, "wd.csv", row.names = FALSE)
+
 
